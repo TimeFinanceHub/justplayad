@@ -180,5 +180,24 @@ background-color: #333;
         </nav>
   
   </div>
+  <script>
+    // --- Navigation Bar JavaScript ---
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.getElementById('nav-links');
+const settingsSection = document.getElementById('settings');
+const settingsButton = document.getElementById('settings-button')
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+// Event listener for the settings button
+settingsButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    settingsSection.style.display = settingsSection.style.display === 'block' ? 'none' : 'block';
+    navLinks.classList.remove('show');//Close menu
+});
+// Hide settings initially
+settingsSection.style.display = 'none';
+  </script>
 </body>
 </html>
