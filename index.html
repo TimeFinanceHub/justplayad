@@ -1,178 +1,186 @@
-<style>
-        /*ad*/
-        ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 5px;
-    }
-        .ad-container {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming</title>
+  <style>
+    /*ad*/
+    ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 5px;
+}
+    .ad-container {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+}
 
-  .app-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    animation: bounce 1s infinite;
-  }
+.app-icon {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin-bottom: 20px;
+animation: bounce 1s infinite;
+}
 
-  @keyframes bounce {
-    0%, 20% {
-      transform: translateY(0);
-    }
-    40%, 80% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+@keyframes bounce {
+0%, 20% {
+  transform: translateY(0);
+}
+40%, 80% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(0);
+}
+}
 
-  h2 {
-    margin-bottom: 10px;
-  }
+h2 {
+margin-bottom: 10px;
+}
 
-  p {
-    margin-bottom: 15px;
-  }
+p {
+margin-bottom: 15px;
+}
 
-  .download-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+.download-button {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
 </style>
 
 
 <style>
-  /* --- Navigation Bar Styles --- */
-  #navbar {
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  #navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: block;
-  }
-
-  #navbar a:hover {
-      background-color: #555;
-  }
-#navbar h1 {
-  margin-left: 1rem;
-  font-size: 1.5rem;
+/* --- Navigation Bar Styles --- */
+#navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  .menu-toggle {
-      cursor: pointer;
-      display: none; /* Hidden by default on larger screens */
-      flex-direction: column;
-      justify-content: space-around;
-      width: 30px;
-      height: 25px;
-  margin-right: 1rem;
-  }
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
 
-  .menu-toggle span {
-      background-color: white;
-      height: 3px;
-      width: 100%;
-      display: block;
-  }
+#navbar a:hover {
+  background-color: #555;
+}
+#navbar h1 {
+margin-left: 1rem;
+font-size: 1.5rem;
+}
 
-  #nav-links {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-  }
+.menu-toggle {
+  cursor: pointer;
+  display: none; /* Hidden by default on larger screens */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+margin-right: 1rem;
+}
+
+.menu-toggle span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  display: block;
+}
+
+#nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /* Style the settings button */
 #settings-button {
-  background-color: #555; /* Gray */
+background-color: #555; /* Gray */
 }
 
 #settings-button:hover {
-  background-color: #333;
+background-color: #333;
 }
 
-  /* --- Media Query for Mobile --- */
-  @media (max-width: 768px) {
-      .menu-toggle {
-          display: flex;
-      }
-
-      #nav-links {
-          display: none;
-          flex-direction: column;
-          width: 100%;
-          position: absolute;
-          top: 60px; /* Adjust as needed based on navbar height */
-          left: 0;
-          background-color: #333;
-      }
-
-      #nav-links.show {
-          display: flex;
-      }
-      #navbar a{
-          text-align: center;
-      }
+/* --- Media Query for Mobile --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
   }
+
+  #nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust as needed based on navbar height */
+      left: 0;
+      background-color: #333;
+  }
+
+  #nav-links.show {
+      display: flex;
+  }
+  #navbar a{
+      text-align: center;
+  }
+}
 </style>
-
-
-<div class="ad-container">
-  <img src="https://play-lh.googleusercontent.com/gdZT_O4cq4UF340A0JrKHL5NouqSYzEqL_RAnYKdt5brNF87KH3v5zkbwRVDkKpwG3w" alt="JustPlay App Icon" class="app-icon"> 
-  <h2>Download JustPlay Today!</h2>
-  <p>Experience the thrill of mobile gaming with JustPlay.</p>
-  <p>Join millions of players worldwide and enjoy:</p>
-  <ul>
-    <li>Exciting games for all ages</li>
-    <li>Multiplayer challenges and tournaments</li>
-    <li>Daily rewards and exclusive offers</li>
-  </ul>
-  <a href="https://play.google.com/store/apps/details?id=com.justplay.app" target="_blank">
-    <button class="download-button">Download on Google Play</button>
-  </a>
-      
-      <nav id="navbar">
-          <h1>ChronoBlocks</h1>
-          <div class="menu-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-          <ul id="nav-links">
-              <li><a href="#" id="settings-button">Settings</a></li>
-              <li><a href="https://ramirogglez.tiiny.io/">Check and Download My CV here</a></li>
-              <li><a href="https://versoftly.github.io/ChronoBlocks/">ChronoBlocks</a></li>
-              <li><a href="https://versoftly.github.io/AppTableCrud/">App Table Crud</a></li>
-              <li><a href="https://versoftly.github.io/monitor-blog">Tools</a></li>
-              <li>a href="https://versoftly.github.io/App_-_Game_Review_Log/">App & Game Review Log</a></li>
-              <li><a href="https://versoftly.github.io/dinamic_payday/">Dynamic Payday web App</a></li>
-              <li><a href="https://0kbmxv-1i.myshopify.com/">Demo : My Store</a></li>
-              <li><a href="https://versoftly.github.io/introduccion_js/">Introduccion a JavaScript</a></li>
-              <li><a href="https://versoftly.github.io/calendario_celebraciones--Alb_Maz_Gemini/">
-                Calendario de Celebraciones Populares Abq & mzt
-              </a></li>
-          </ul>
-      </nav>
-
-</div>
+</head>
+<body>
+  <div class="ad-container">
+    <img src="https://play-lh.googleusercontent.com/gdZT_O4cq4UF340A0JrKHL5NouqSYzEqL_RAnYKdt5brNF87KH3v5zkbwRVDkKpwG3w" alt="JustPlay App Icon" class="app-icon"> 
+    <h2>Download JustPlay Today!</h2>
+    <p>Experience the thrill of mobile gaming with JustPlay.</p>
+    <p>Join millions of players worldwide and enjoy:</p>
+    <ul>
+      <li>Exciting games for all ages</li>
+      <li>Multiplayer challenges and tournaments</li>
+      <li>Daily rewards and exclusive offers</li>
+    </ul>
+    <a href="https://play.google.com/store/apps/details?id=com.justplay.app" target="_blank">
+      <button class="download-button">Download on Google Play</button>
+    </a>
+        
+        <nav id="navbar">
+            <h1>ChronoBlocks</h1>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#" id="settings-button">Settings</a></li>
+                <li><a href="https://ramirogglez.tiiny.io/">Check and Download My CV here</a></li>
+                <li><a href="https://versoftly.github.io/ChronoBlocks/">ChronoBlocks</a></li>
+                <li><a href="https://versoftly.github.io/AppTableCrud/">App Table Crud</a></li>
+                <li><a href="https://versoftly.github.io/monitor-blog">Tools</a></li>
+                <li>a href="https://versoftly.github.io/App_-_Game_Review_Log/">App & Game Review Log</a></li>
+                <li><a href="https://versoftly.github.io/dinamic_payday/">Dynamic Payday web App</a></li>
+                <li><a href="https://0kbmxv-1i.myshopify.com/">Demo : My Store</a></li>
+                <li><a href="https://versoftly.github.io/introduccion_js/">Introduccion a JavaScript</a></li>
+                <li><a href="https://versoftly.github.io/calendario_celebraciones--Alb_Maz_Gemini/">
+                  Calendario de Celebraciones Populares Abq & mzt
+                </a></li>
+            </ul>
+        </nav>
+  
+  </div>
+</body>
+</html>
